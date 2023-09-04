@@ -43,7 +43,7 @@ class Voice:
             with sr.Microphone() as source:
                 self.talk("Please wait for a second")
 
-                self.listener.adjust_for_ambient_noise(source, duration=5)
+                self.listener.adjust_for_ambient_noise(source, duration=10)
                 self.talk("Ready to go")
 
                 # self.listener.pause_threshold = 1
